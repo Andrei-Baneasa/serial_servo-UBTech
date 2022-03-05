@@ -113,5 +113,16 @@ namespace serial_servo
             label5.Text = label; //display buffer
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            Int32 value =Int32.Parse(textBox1.Text); //read number from text box
+            trackBar1.Value = value * 255 / 360; //send value from textbox to trackbar
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            Int32 value = Int32.Parse(textBox2.Text); //read number from text box
+            trackBar2.Value = value; //send value from textbox to trackbar
+        }
     }
 }
