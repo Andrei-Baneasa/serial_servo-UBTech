@@ -43,9 +43,44 @@ namespace serial_servo
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.trackBar3 = new System.Windows.Forms.TrackBar();
+            this.label7 = new System.Windows.Forms.Label();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
+            this.trackBar4 = new System.Windows.Forms.TrackBar();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.trackBar5 = new System.Windows.Forms.TrackBar();
+            this.label10 = new System.Windows.Forms.Label();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.label11 = new System.Windows.Forms.Label();
+            this.trackBar6 = new System.Windows.Forms.TrackBar();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.trackBar7 = new System.Windows.Forms.TrackBar();
+            this.label13 = new System.Windows.Forms.Label();
+            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.label14 = new System.Windows.Forms.Label();
+            this.trackBar8 = new System.Windows.Forms.TrackBar();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar8)).BeginInit();
             this.SuspendLayout();
             // 
             // trackBar1
@@ -87,7 +122,7 @@ namespace serial_servo
             // trackBar2
             // 
             this.trackBar2.Location = new System.Drawing.Point(366, 104);
-            this.trackBar2.Maximum = 240;
+            this.trackBar2.Maximum = 255;
             this.trackBar2.Name = "trackBar2";
             this.trackBar2.Size = new System.Drawing.Size(244, 56);
             this.trackBar2.TabIndex = 4;
@@ -104,7 +139,7 @@ namespace serial_servo
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(376, 169);
+            this.button1.Location = new System.Drawing.Point(750, 204);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 29);
             this.button1.TabIndex = 6;
@@ -343,7 +378,7 @@ namespace serial_servo
             "COM224",
             "COM225",
             "COM226"});
-            this.comboBox1.Location = new System.Drawing.Point(33, 275);
+            this.comboBox1.Location = new System.Drawing.Point(720, 73);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(151, 28);
             this.comboBox1.TabIndex = 7;
@@ -352,7 +387,7 @@ namespace serial_servo
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(33, 239);
+            this.label4.Location = new System.Drawing.Point(720, 37);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 20);
             this.label4.TabIndex = 8;
@@ -376,7 +411,7 @@ namespace serial_servo
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(376, 275);
+            this.button2.Location = new System.Drawing.Point(693, 131);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 29);
             this.button2.TabIndex = 11;
@@ -386,7 +421,7 @@ namespace serial_servo
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(516, 275);
+            this.button3.Location = new System.Drawing.Point(830, 131);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(94, 29);
             this.button3.TabIndex = 12;
@@ -397,17 +432,267 @@ namespace serial_servo
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(33, 344);
+            this.label5.Location = new System.Drawing.Point(736, 285);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(122, 20);
             this.label5.TabIndex = 13;
             this.label5.Text = "Serial port buffer";
             // 
+            // textBox3
+            // 
+            this.textBox3.Enabled = false;
+            this.textBox3.Location = new System.Drawing.Point(503, 218);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(107, 27);
+            this.textBox3.TabIndex = 21;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Enabled = false;
+            this.textBox4.Location = new System.Drawing.Point(161, 218);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(107, 27);
+            this.textBox4.TabIndex = 20;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(366, 218);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(98, 20);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "duration (ms)";
+            // 
+            // trackBar3
+            // 
+            this.trackBar3.Enabled = false;
+            this.trackBar3.Location = new System.Drawing.Point(366, 249);
+            this.trackBar3.Maximum = 255;
+            this.trackBar3.Name = "trackBar3";
+            this.trackBar3.Size = new System.Drawing.Size(244, 56);
+            this.trackBar3.TabIndex = 18;
+            this.trackBar3.Scroll += new System.EventHandler(this.trackBar3_Scroll);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(24, 294);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(63, 20);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "servo ID";
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Enabled = false;
+            this.numericUpDown2.Location = new System.Drawing.Point(33, 317);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(150, 27);
+            this.numericUpDown2.TabIndex = 16;
+            this.numericUpDown2.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(24, 218);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(129, 20);
+            this.label8.TabIndex = 15;
+            this.label8.Text = " servo angle (deg)";
+            // 
+            // trackBar4
+            // 
+            this.trackBar4.Enabled = false;
+            this.trackBar4.Location = new System.Drawing.Point(24, 249);
+            this.trackBar4.Maximum = 240;
+            this.trackBar4.Name = "trackBar4";
+            this.trackBar4.Size = new System.Drawing.Size(244, 56);
+            this.trackBar4.TabIndex = 14;
+            this.trackBar4.Scroll += new System.EventHandler(this.trackBar4_Scroll);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Enabled = false;
+            this.textBox5.Location = new System.Drawing.Point(503, 379);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(107, 27);
+            this.textBox5.TabIndex = 29;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Enabled = false;
+            this.textBox6.Location = new System.Drawing.Point(161, 379);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(107, 27);
+            this.textBox6.TabIndex = 28;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(366, 379);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(98, 20);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "duration (ms)";
+            // 
+            // trackBar5
+            // 
+            this.trackBar5.Enabled = false;
+            this.trackBar5.Location = new System.Drawing.Point(366, 410);
+            this.trackBar5.Maximum = 255;
+            this.trackBar5.Name = "trackBar5";
+            this.trackBar5.Size = new System.Drawing.Size(244, 56);
+            this.trackBar5.TabIndex = 26;
+            this.trackBar5.Scroll += new System.EventHandler(this.trackBar5_Scroll);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(24, 455);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(63, 20);
+            this.label10.TabIndex = 25;
+            this.label10.Text = "servo ID";
+            // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.Enabled = false;
+            this.numericUpDown3.Location = new System.Drawing.Point(33, 478);
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(150, 27);
+            this.numericUpDown3.TabIndex = 24;
+            this.numericUpDown3.ValueChanged += new System.EventHandler(this.numericUpDown3_ValueChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(24, 379);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(129, 20);
+            this.label11.TabIndex = 23;
+            this.label11.Text = " servo angle (deg)";
+            // 
+            // trackBar6
+            // 
+            this.trackBar6.Enabled = false;
+            this.trackBar6.Location = new System.Drawing.Point(24, 410);
+            this.trackBar6.Maximum = 240;
+            this.trackBar6.Name = "trackBar6";
+            this.trackBar6.Size = new System.Drawing.Size(244, 56);
+            this.trackBar6.TabIndex = 22;
+            this.trackBar6.Scroll += new System.EventHandler(this.trackBar6_Scroll);
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(675, 218);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(107, 27);
+            this.textBox7.TabIndex = 38;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(333, 218);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(107, 27);
+            this.textBox8.TabIndex = 37;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(538, 218);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(98, 20);
+            this.label12.TabIndex = 36;
+            this.label12.Text = "duration (ms)";
+            // 
+            // trackBar7
+            // 
+            this.trackBar7.Location = new System.Drawing.Point(538, 249);
+            this.trackBar7.Maximum = 240;
+            this.trackBar7.Name = "trackBar7";
+            this.trackBar7.Size = new System.Drawing.Size(244, 56);
+            this.trackBar7.TabIndex = 35;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(196, 294);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(63, 20);
+            this.label13.TabIndex = 34;
+            this.label13.Text = "servo ID";
+            // 
+            // numericUpDown4
+            // 
+            this.numericUpDown4.Location = new System.Drawing.Point(205, 317);
+            this.numericUpDown4.Name = "numericUpDown4";
+            this.numericUpDown4.Size = new System.Drawing.Size(150, 27);
+            this.numericUpDown4.TabIndex = 33;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(196, 218);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(129, 20);
+            this.label14.TabIndex = 32;
+            this.label14.Text = " servo angle (deg)";
+            // 
+            // trackBar8
+            // 
+            this.trackBar8.Location = new System.Drawing.Point(196, 249);
+            this.trackBar8.Maximum = 240;
+            this.trackBar8.Name = "trackBar8";
+            this.trackBar8.Size = new System.Drawing.Size(244, 56);
+            this.trackBar8.TabIndex = 31;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(706, 410);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(143, 24);
+            this.checkBox1.TabIndex = 32;
+            this.checkBox1.Text = "use more motots";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(706, 440);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(251, 24);
+            this.checkBox2.TabIndex = 33;
+            this.checkBox2.Text = "different duration for each motor";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(978, 562);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.trackBar5);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.numericUpDown3);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.trackBar6);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.trackBar3);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.numericUpDown2);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.trackBar4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -428,6 +713,15 @@ namespace serial_servo
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -449,6 +743,32 @@ namespace serial_servo
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TrackBar trackBar3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TrackBar trackBar4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TrackBar trackBar5;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TrackBar trackBar6;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TrackBar trackBar7;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TrackBar trackBar8;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
     }
 }
 
