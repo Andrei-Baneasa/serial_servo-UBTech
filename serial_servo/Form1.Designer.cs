@@ -67,8 +67,8 @@ namespace serial_servo
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
             this.trackBar8 = new System.Windows.Forms.TrackBar();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
@@ -648,37 +648,35 @@ namespace serial_servo
             this.trackBar8.Size = new System.Drawing.Size(244, 56);
             this.trackBar8.TabIndex = 31;
             // 
-            // radioButton1
+            // checkBox1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(706, 338);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(142, 24);
-            this.radioButton1.TabIndex = 30;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "use more motors";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(706, 410);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(143, 24);
+            this.checkBox1.TabIndex = 32;
+            this.checkBox1.Text = "use more motots";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // radioButton2
+            // checkBox2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(706, 377);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(154, 24);
-            this.radioButton2.TabIndex = 31;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "time for all motors";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(706, 440);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(251, 24);
+            this.checkBox2.TabIndex = 33;
+            this.checkBox2.Text = "different duration for each motor";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 562);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label9);
@@ -769,8 +767,8 @@ namespace serial_servo
         private System.Windows.Forms.NumericUpDown numericUpDown4;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TrackBar trackBar8;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
     }
 }
 

@@ -91,7 +91,7 @@ namespace serial_servo
 
             label = ""; //clear label buffer string
 
-            if (radioButton1.Checked == true)
+            if (checkBox1.Checked == true)
             {
                 noMotors = 3; //if using 3 motors
             }
@@ -105,7 +105,12 @@ namespace serial_servo
                 buffer[2] = servoID[j]; //servo ID
                 buffer[3] = 0x01; //command move to angle
                 buffer[4] = servoAngle[j]; //servo angle
-                buffer[5] = servoTime[j]; //time of motion
+                buffer[5] = servoTime[0]; //time of motion
+                if (checkBox2.Checked == true)
+                {
+                    buffer[5] = servoTime[j]; //time of motion
+                }
+                
                 buffer[6] = 0x00; //dunno MSByte
                 buffer[7] = 0x01; //dunno LSByte
                 for (int i = 2; i < 7; i++)
@@ -129,8 +134,8 @@ namespace serial_servo
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            Int32 value =Int32.Parse(textBox1.Text); //read number from text box
-            trackBar1.Value = value * 255 / 360; //send value from textbox to trackbar
+            /*Int32 value =Int32.Parse(textBox1.Text); //read number from text box
+            trackBar1.Value = value * 255 / 360; //send value from textbox to trackbar*/
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -158,14 +163,14 @@ namespace serial_servo
 
         private void trackBar4_Scroll(object sender, EventArgs e)
         {
-            servoTime[1] = (byte)trackBar4.Value; //get byte
-            textBox4.Text = (trackBar4.Value * 20).ToString(); //display
+            servoAngle[1] = (byte)trackBar4.Value; //get byte
+            textBox4.Text = (trackBar4.Value * 360 / 240).ToString(); //display
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-            Int32 value = Int32.Parse(textBox4.Text); //read number from text box
-            trackBar4.Value = value * 255 / 360; //send value from textbox to trackbar
+            /*Int32 value = Int32.Parse(textBox4.Text); //read number from text box
+            trackBar4.Value = value * 255 / 360; //send value from textbox to trackbar*/
         }
 
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)
@@ -175,14 +180,14 @@ namespace serial_servo
 
         private void trackBar6_Scroll(object sender, EventArgs e)
         {
-            servoTime[2] = (byte)trackBar6.Value; //get byte
-            textBox6.Text = (trackBar6.Value * 20).ToString(); //display
+            servoAngle[2] = (byte)trackBar6.Value; //get byte
+            textBox6.Text = (trackBar6.Value * 360 / 240).ToString(); //display
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
-            Int32 value = Int32.Parse(textBox6.Text); //read number from text box
-            trackBar6.Value = value * 255 / 360; //send value from textbox to trackbar
+            /*Int32 value = Int32.Parse(textBox6.Text); //read number from text box
+            trackBar6.Value = value * 255 / 360; //send value from textbox to trackbar*/
         }
 
         private void numericUpDown3_ValueChanged(object sender, EventArgs e)
@@ -198,8 +203,53 @@ namespace serial_servo
 
         private void trackBar5_Scroll(object sender, EventArgs e)
         {
+            
             servoTime[2] = (byte)trackBar5.Value; //get byte
             textBox5.Text = (trackBar5.Value * 20).ToString(); //display
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                textBox4.Enabled = true;
+                trackBar4.Enabled = true;
+                numericUpDown2.Enabled = true;
+                textBox6.Enabled = true;
+                trackBar6.Enabled = true;
+                numericUpDown3.Enabled = true;
+            }
+            else
+            {
+                textBox4.Enabled = false;
+                trackBar4.Enabled = false;
+                numericUpDown2.Enabled = false;
+                textBox6.Enabled = false;
+                trackBar6.Enabled = false;
+                numericUpDown3.Enabled = false;
+            }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                textBox3.Enabled = true;
+                trackBar3.Enabled = true;
+                
+                textBox5.Enabled = true;
+                trackBar5.Enabled = true;
+             
+            }
+            else
+            {
+                textBox3.Enabled = false;
+                trackBar3.Enabled = false;
+               
+                textBox5.Enabled = false;
+                trackBar5.Enabled = false;
+            
+            }
         }
     }
 }
